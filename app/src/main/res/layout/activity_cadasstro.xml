@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".init.CadasstroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="332dp"
+                android:layout_height="221dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/background_signup" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Cadastro"
+                android:textAlignment="center"
+                android:textColor="@color/destaque_two"
+                android:textSize="@dimen/text_title_1_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:labelFor="@id/editTextCadastroNome"
+                android:text="Nome"
+                android:textColor="@color/destaque_two"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextCadastroNome"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:hint="Digite Seu Nome"
+                android:inputType="textPersonName"
+                android:paddingStart="28dp"
+                android:textColorHint="@color/corDica" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:labelFor="@id/editTextTextCadastroEmail"
+                android:text="Telefone"
+                android:textColor="@color/destaque_two"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextCadastroEmail"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:hint="Digite Seu Número"
+                android:inputType="number"
+                android:paddingStart="28dp"
+                android:textColorHint="@color/corDica" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:labelFor="@id/editTextTextCadastroPassword"
+                android:text="Senha"
+                android:textColor="@color/destaque_two"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextCadastroPassword"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:hint="Digite Uma Senha"
+                android:inputType="textWebEmailAddress"
+                android:paddingStart="28dp"
+                android:textColorHint="@color/corDica" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/editTextTextCadastroPassword2"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:text="Senha"
+                android:textColor="@color/destaque_two"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextTextCadastroPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:hint="Digite Novamene a Senha"
+                android:inputType="textPassword"
+                android:paddingStart="28dp"
+                android:textColorHint="@color/corDica"/>
+
+            <RadioGroup
+                android:id="@+id/RadioGroupCadastro"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioButtomClienteCadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Cliente" />
+                <RadioButton
+                    android:id="@+id/RadioButtomComercianteCadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comerciante" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="16dp"
+                android:id="@+id/layoutProdutoDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Serviço"
+                    android:textColor="@color/destaque_two"
+                    android:textSize="@dimen/label_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextCadastroServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/background_edit"
+                    android:ems="10"
+                    android:hint="Digite produto ou serviço que pesta"
+                    android:inputType="textAutoComplete"
+                    android:paddingStart="28dp"
+                    android:textColorHint="@color/corDica" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Descrição"
+                    android:textColor="@color/destaque_two"
+                    android:textSize="@dimen/label_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextCadastroDescricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/background_edit"
+                    android:ems="10"
+                    android:hint="Descreve o produto ou serviço"
+                    android:inputType="text"
+                    android:paddingStart="28dp"
+                    android:textColorHint="@color/corDica" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/green_banner_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastrar"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/button_facebook"
+                android:background="@drawable/bg_button_facebook"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cadastrar com Facebook"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

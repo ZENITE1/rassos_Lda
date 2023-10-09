@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/destaque_two"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="CONFIRMA SENHA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title_1_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextConfirmacaoPass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/background_edit"
+        android:drawingCacheQuality="auto"
+        android:ems="10"
+        android:hint="Digite a senha da carteira"
+        android:inputType="numberPassword"
+        android:paddingStart="28dp"
+        android:textColorHint="@color/corDica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></EditText>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

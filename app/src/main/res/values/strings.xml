@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rassos_la</string>
+    <string name="servicos">Serviços</string>
+    <string name="app_description_service_ussd">Rassos_la necessita da tua permisão para usar os recursos de acessibilidade do dispositivo para requesição USSD. Para teres acesso a nova forma de pagamento usando as tuas carteiras digitais.</string>
+    <string name="facebook_app_id">1271358657028737</string>
+    <string name="fb_login_protocol_scheme">fb1271358657028737</string>
+    <string name="facebook_client_token">1271358657028737|Kn2WD6QWq8Hf30AOm6brr8P296A</string>
+    <string name="LABEL_SEND">enviar</string>
+    <string name="LABEL_CANCEL">cancelar</string>
+    <string name="LABEL_OK">ok</string>
+    <string name="REQUEST_ESPERE">espere</string>
+
+</resources>

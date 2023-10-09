@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="wrap_content" format="integer" type="dimen">-2</item>
+    <item name="match_content" format="integer" type="dimen">-1</item>
+    <dimen name="label_text_size">18sp</dimen>
+    <dimen name="text_title_1_size">20sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="radio_btn">10dp</dimen>
+</resources>

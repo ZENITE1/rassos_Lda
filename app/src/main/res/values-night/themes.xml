@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Rassos_la" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">@dimen/wrap_content</item>
+        <item name="background">@drawable/blue_button_background</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+</resources>
